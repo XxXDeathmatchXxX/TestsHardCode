@@ -2,9 +2,9 @@ from requests.auth import HTTPBasicAuth
 
 
 login = HTTPBasicAuth('admin', 'admin')
-user = {
+user_category = {
 
-        "name": "15"
+        "name": "Cats"
     }
 
 url_category = "http://91.210.171.73:8080/api/category/"
@@ -23,12 +23,24 @@ user_new = {
 url_category_new = "http://91.210.171.73:8080/api/category/230/"
 
 url_pets = "http://91.210.171.73:8080/api/pet/"
-
+url_pets_new = "http://91.210.171.73:8080/api/pet/120/"
 user_pet = {
-  "name": "22",
-  "photo_url": "22",
+
+"name": "Doc",
+  "photo_url": "string",
   "category": {
-    "name": "115"
+    "name": "Cats"
   },
-  "status": "22"
+  "status": "available"
+}
+
+
+user_pet_new = {
+
+"name": "RobAgain",
+  "photo_url": "string",
+  "category": {
+    "name": "Cats"
+  },
+  "status": "available"
 }

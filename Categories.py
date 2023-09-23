@@ -1,7 +1,7 @@
 import pytest
 import requests
 import json
-from settings import login, user, url_category, user_id, user_new,url_category_new
+from settings import login, user_category, url_category, user_id, user_new,url_category_new
 from colorama import init, Fore
 
 init(autoreset=True)
@@ -15,8 +15,10 @@ def jprint(obj):
 
 # 1 Test Get list of categories
 def get_status_of_categories():
+    print(Fore.CYAN + "get_status_of_categories() is running now")
     r = requests.get(url_category, auth=login)
     assert r.status_code == 200
+    print(Fore.CYAN + "Function get_status_of_categories() ends ")
     return r
 
 
@@ -29,7 +31,7 @@ jprint(r.json())
 # 2 Create Category
 def create_new_category():
     print(Fore.CYAN + "create_new_category() is running now")
-    r = requests.post(url_category, auth=login, data=user)
+    r = requests.post(url_category, auth=login, data=user_category)
     try:
         r.raise_for_status()
     except requests.exceptions.HTTPError as e:
@@ -96,3 +98,5 @@ def delete_category_by_id():
         print(Fore.YELLOW + "Line does not exist, status code:"f'{r.status_code}')
 
     print(Fore.CYAN + "Function Function delete_category_by_id() ends")
+
+
