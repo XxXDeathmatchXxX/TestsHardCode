@@ -38,7 +38,7 @@ def create_new_category():
     if(r.status_code == 201):
         assert r.status_code == 201
         print(r.status_code)
-        print(Fore.GREEN + "Function Create_new_category succeeded, Pet Created")
+        print(Fore.GREEN + "Function Create_new_category succeeded, category Created")
     elif(r.status_code != 201):
         print(Fore.BLUE + "Function Create_new_category failed. Current status is: " f'{r.status_code}.', Fore.BLUE+ "Category already exists, "
                                                                                     "enter another type of category")
