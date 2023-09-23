@@ -40,10 +40,10 @@
   # 5 Удаление созданного Пета по id, при помощи метода DELETE прозитивный и негативный тест, при существовании номера пета успешно удаляет категорию, при отсутствии пишет, что пет удален, либо не существует.
   delete_pet_by_id()
 
-
+    # Functions
 
 Список доступных функций Categories.py:
-	get_status_of_categories()
+    get_status_of_categories()
 	create_new_category()
 	get_status_of_category_by_id()
 	put_category_by_id()
