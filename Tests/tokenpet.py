@@ -5,6 +5,10 @@ from colorama import Fore
 
 
 
+def jprint(obj):
+    # create a formatted string of the Python JSON object
+    text = json.dumps(obj, sort_keys=True, indent=4)
+    print(text)
 
 def create_new_token():
     print(Fore.CYAN + "create_new_token() is running now")
@@ -23,7 +27,7 @@ def create_new_token():
               "token already exists, ""enter another token")
     print(Fore.CYAN + "Function create_new_token() ends ")
 
-create_new_token()
+#create_new_token()
 
 
 if __name__ == "__main__":

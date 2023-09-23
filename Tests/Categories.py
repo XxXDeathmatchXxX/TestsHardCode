@@ -52,7 +52,7 @@ def create_new_category():
 
 
 
-# 3
+# 3 get_status_of_category_by_id
 def get_status_of_category_by_id():
     print(Fore.CYAN + "get_status_of_category_by_id() is running now")
     number = input('Enter id number:')
@@ -64,7 +64,7 @@ def get_status_of_category_by_id():
     print(r.json())
     print(Fore.CYAN + "Function get_status_of_category_by_id() ends")
 
-# 4
+# 4 put_category_by_id
 def put_category_by_id():
     print(Fore.CYAN + "put_category_by_id() is running now")
     r = requests.put(url_category_new, auth=login, json=user_new)
@@ -83,7 +83,7 @@ def put_category_by_id():
 put_category_by_id()
 
 
-# 5
+# 5 delete_category_by_id
 def delete_category_by_id():
     print(Fore.CYAN +"Function delete_category_by_id() is running now")
     number = input(Fore.GREEN + 'Which id number do you want to delete:')
@@ -99,6 +99,20 @@ def delete_category_by_id():
         print(Fore.YELLOW + "Line does not exist, status code:"f'{r.status_code}')
 
     print(Fore.CYAN + "Function Function delete_category_by_id() ends")
+
+    # 1
+    # get_status_of_categories()
+    # 2
+    # create_new_category()
+    # 3
+    # get_status_of_category_by_id()
+    # 4
+    # put_category_by_id()
+    # 5
+    # delete_category_by_id()
+
+
+
 
     if __name__ == "__main__":
         ...
