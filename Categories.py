@@ -66,7 +66,6 @@ def get_status_of_category_by_id():
 def put_category_by_id():
     print(Fore.CYAN + "put_category_by_id() is running now")
     r = requests.put(url_category_new, auth=login, json=user_new)
-
     try:
       r.raise_for_status()
     except requests.exceptions.HTTPError as e:
@@ -79,7 +78,7 @@ def put_category_by_id():
     print(r.json())
     print(Fore.CYAN + "Function put_category_by_id() ends")
 
-
+put_category_by_id()
 
 
 # 5

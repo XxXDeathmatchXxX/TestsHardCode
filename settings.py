@@ -16,11 +16,11 @@ user_id = {
 user_new = {
 
 
-  "name": "16"
+  "name": "18"
 }
 
 
-url_category_new = "http://91.210.171.73:8080/api/category/230/"
+url_category_new = "http://91.210.171.73:8080/api/category/233/"
 
 url_pets = "http://91.210.171.73:8080/api/pet/"
 url_pets_new = "http://91.210.171.73:8080/api/pet/120/"
@@ -44,3 +44,9 @@ user_pet_new = {
   },
   "status": "available"
 }
+
+url_token = "http://91.210.171.73:8080/api/api/token/auth/"
+token = {
+  "token": "dfdf"
+}
+

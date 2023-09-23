@@ -39,7 +39,7 @@ def create_new_pet():
         print(Fore.CYAN + 'ERROR: %s' % e)
 
     if(r.status_code == 201):
-        # assert r.status_code == 201
+        assert r.status_code == 201
         print(r.status_code)
         print(Fore.GREEN + "Function create_new_pet succeeded, Pet Created")
     elif(r.status_code != 201):
@@ -47,7 +47,7 @@ def create_new_pet():
               "pet already exists, ""enter another type of category")
     print(Fore.CYAN + "Function create_new_pet() ends ")
 
-# create_new_pet()
+create_new_pet()
 
 
 
