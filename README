@@ -42,19 +42,19 @@
 
 
 Список доступных функций Categories.py:
-get_status_of_categories()
-create_new_category()
-get_status_of_category_by_id()
-put_category_by_id()
-delete_category_by_id()
+    get_status_of_categories()
+    create_new_category()
+    get_status_of_category_by_id()
+    put_category_by_id()
+    delete_category_by_id()
 
 
 Функции Pets.py
-get_status_of_pets()
-create_new_pet()
-get_status_of_pets_by_id()
-put_pet_by_id()
-delete_pet_by_id()
+    get_status_of_pets()
+    create_new_pet()
+    get_status_of_pets_by_id()
+    put_pet_by_id()
+    delete_pet_by_id()
 
 
 В дополнение везде реализована функция jprint(obj), для вывода json файла в столбец
