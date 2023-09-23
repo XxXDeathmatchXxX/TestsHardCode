@@ -3,6 +3,11 @@ import requests
 import json
 from settings import login, url_pets, user_pet, user_pet_new, url_pets_new
 from colorama import init, Fore
+import docker
+
+
+
+
 
 init(autoreset=True)
 
@@ -47,7 +52,7 @@ def create_new_pet():
               "pet already exists, ""enter another type of category")
     print(Fore.CYAN + "Function create_new_pet() ends ")
 
-create_new_pet()
+
 
 
 
@@ -110,3 +115,8 @@ def delete_pet_by_id():
     print(Fore.CYAN + "Function Function delete_pet_by_id() ends")
 
 # delete_pet_by_id()
+
+
+
+if __name__ == "__main__":
+    ...

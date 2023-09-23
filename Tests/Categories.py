@@ -3,6 +3,8 @@ import requests
 import json
 from settings import login, user_category, url_category, user_id, user_new,url_category_new
 from colorama import init, Fore
+import docker
+client = docker.from_env()
 
 init(autoreset=True)
 
@@ -97,5 +99,8 @@ def delete_category_by_id():
         print(Fore.YELLOW + "Line does not exist, status code:"f'{r.status_code}')
 
     print(Fore.CYAN + "Function Function delete_category_by_id() ends")
+
+    if __name__ == "__main__":
+        ...
 
 

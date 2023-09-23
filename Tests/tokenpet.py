@@ -1,8 +1,6 @@
-import pytest
 import requests
-import json
-from settings import login, token, url_token
-from colorama import init, Fore
+from Tests.settings import login, token, url_token
+from colorama import Fore
 
 
 
@@ -26,6 +24,10 @@ def create_new_token():
     print(Fore.CYAN + "Function create_new_token() ends ")
 
 create_new_token()
+
+
+if __name__ == "__main__":
+    ...
 
 
 
